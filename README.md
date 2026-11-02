@@ -10,7 +10,7 @@ lpk-2a/
 ├── index.html          -> struktur halaman (HTML5 semantik)
 ├── style.css           -> seluruh styling (CSS eksternal)
 ├── assets/
-│   └── foto.jpg        -> foto profil
+│   └── foto.png        -> foto profil
 ├── screenshot/
 │   ├── screenshot-desktop.png
 │   └── screenshot-mobile.png
@@ -19,10 +19,9 @@ lpk-2a/
 
 ## 2. Cara Menjalankan (Langkah demi Langkah)
 
-1. Ekstrak file zip sampai muncul folder `lpk-2a`.
-2. Buka folder `lpk-2a`.
-3. Klik dua kali file `index.html`. Halaman akan terbuka di browser.
-4. Selesai. Tidak perlu server atau internet.
+1. Buka folder `lpk-2a`.
+2. Klik dua kali file `index.html`. Halaman akan terbuka di browser.
+3. Selesai. Tidak perlu server atau internet.
 
 Opsional, kalau memakai VS Code: klik kanan `index.html` lalu pilih **Open with Live Server**.
 
@@ -44,14 +43,3 @@ Opsional, kalau memakai VS Code: klik kanan `index.html` lalu pilih **Open with 
 - **CSS Grid** dipakai pada `.cards` (`repeat(auto-fit, minmax(180px, 1fr))`), sehingga kartu otomatis turun baris di layar kecil.
 - **Box model**: `* { box-sizing: border-box; }` agar ukuran elemen sudah termasuk padding dan border.
 - **Efek hover** pada link menu dan kartu.
-
-## 4. Tambahan di Luar Contoh Modul
-
-Isi modul tetap diikuti. Perbaikan kecil yang ditambahkan:
-
-- Tautan **"Lewati ke konten utama"** untuk pengguna keyboard dan pembaca layar.
-- `aria-label` pada `<nav>` dan `aria-labelledby` pada tiap `<section>`.
-- **Fokus keyboard** yang terlihat jelas (`:focus-visible`).
-- **Scroll halus** saat klik menu, dan menu **menempel di atas** saat halaman di-scroll.
-- Menghormati pengaturan pengguna yang mematikan animasi (`prefers-reduced-motion`).
-- Meta `description` untuk SEO dasar.
