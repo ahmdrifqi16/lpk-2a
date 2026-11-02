@@ -1,0 +1,122 @@
+/* ===== Reset & dasar ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a { color: #0066cc; }
+
+/* Fokus keyboard yang jelas */
+a:focus-visible {
+  outline: 3px solid #00aaff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Tautan lewati (aksesibilitas) */
+.lewati {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  background: #fff;
+  color: #0066cc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  z-index: 20;
+}
+.lewati:focus { top: 8px; }
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #0066cc, #00aaff);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* ===== Navigasi (Flexbox) ===== */
+nav {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav a:hover { color: #00aaff; border-bottom-color: #00aaff; }
+
+/* ===== Konten ===== */
+main { max-width: 960px; margin: 24px auto; padding: 0 20px; }
+
+section { margin-bottom: 40px; }
+
+h2 {
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+ul { padding-left: 24px; }
+
+/* ===== Kartu keahlian (Grid) ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #f4f8fb;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #d0e4f5;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Hormati pengguna yang mematikan animasi */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
