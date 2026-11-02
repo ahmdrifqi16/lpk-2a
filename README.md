@@ -1,5 +1,6 @@
 # LKP 2A — Halaman Profil Pribadi dengan HTML5 & CSS
-
+NAMA: AHMAD RIFQI
+NIM: 240511057
 Praktikum **Pertemuan 2: HTML5 & CSS Dasar** (Pemrograman Base Platform).
 Proyek ini adalah halaman profil statis. Tidak perlu instal apa pun, cukup browser.
 
